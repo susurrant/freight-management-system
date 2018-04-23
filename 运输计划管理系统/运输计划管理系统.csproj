@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C889F5C-E401-44ED-8B99-E3916EF5F123}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>运输计划管理系统</RootNamespace>
+    <AssemblyName>运输计划管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="辅助类\deletePlan.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="辅助类\SQLquery.cs" />
+    <Compile Include="运输周计划管理\上报运输周计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输周计划管理\上报运输周计划列表.Designer.cs">
+      <DependentUpon>上报运输周计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输年计划管理\上报运输年计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输年计划管理\上报运输年计划列表.Designer.cs">
+      <DependentUpon>上报运输年计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输月计划管理\上报运输月计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输月计划管理\上报运输月计划列表.Designer.cs">
+      <DependentUpon>上报运输月计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\下达调度令.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\下达调度令.Designer.cs">
+      <DependentUpon>下达调度令.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输周计划管理\下达运输周计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输周计划管理\下达运输周计划列表.Designer.cs">
+      <DependentUpon>下达运输周计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输年计划管理\下达运输年计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输年计划管理\下达运输年计划列表.Designer.cs">
+      <DependentUpon>下达运输年计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输月计划管理\下达运输月计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输月计划管理\下达运输月计划列表.Designer.cs">
+      <DependentUpon>下达运输月计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\审批单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\审批单.Designer.cs">
+      <DependentUpon>审批单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输周计划管理\已下达运输周计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输周计划管理\已下达运输周计划列表.Designer.cs">
+      <DependentUpon>已下达运输周计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输年计划管理\已下达运输年计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输年计划管理\已下达运输年计划列表.Designer.cs">
+      <DependentUpon>已下达运输年计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输月计划管理\已下达运输月计划列表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输月计划管理\已下达运输月计划列表.Designer.cs">
+      <DependentUpon>已下达运输月计划列表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\计划审批.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\计划审批.Designer.cs">
+      <DependentUpon>计划审批.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输周计划管理\运输周计划录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输周计划管理\运输周计划录入.Designer.cs">
+      <DependentUpon>运输周计划录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输月计划管理\运输月计划录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输月计划管理\运输月计划录入.Designer.cs">
+      <DependentUpon>运输月计划录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\调度令详细信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\调度令详细信息.Designer.cs">
+      <DependentUpon>调度令详细信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\运输计划修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\运输计划修改.Designer.cs">
+      <DependentUpon>运输计划修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输年计划管理\运输年计划录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输年计划管理\运输年计划录入.Designer.cs">
+      <DependentUpon>运输年计划录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运输计划综合管理\运输计划详细信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运输计划综合管理\运输计划详细信息.Designer.cs">
+      <DependentUpon>运输计划详细信息.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输周计划管理\上报运输周计划列表.resx">
+      <DependentUpon>上报运输周计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输年计划管理\上报运输年计划列表.resx">
+      <DependentUpon>上报运输年计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输月计划管理\上报运输月计划列表.resx">
+      <DependentUpon>上报运输月计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\下达调度令.resx">
+      <DependentUpon>下达调度令.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输周计划管理\下达运输周计划列表.resx">
+      <DependentUpon>下达运输周计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输年计划管理\下达运输年计划列表.resx">
+      <DependentUpon>下达运输年计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输月计划管理\下达运输月计划列表.resx">
+      <DependentUpon>下达运输月计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\审批单.resx">
+      <DependentUpon>审批单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输周计划管理\已下达运输周计划列表.resx">
+      <DependentUpon>已下达运输周计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输年计划管理\已下达运输年计划列表.resx">
+      <DependentUpon>已下达运输年计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输月计划管理\已下达运输月计划列表.resx">
+      <DependentUpon>已下达运输月计划列表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\计划审批.resx">
+      <DependentUpon>计划审批.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\调度令详细信息.resx">
+      <DependentUpon>调度令详细信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输周计划管理\运输周计划录入.resx">
+      <DependentUpon>运输周计划录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\运输计划修改.resx">
+      <DependentUpon>运输计划修改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输年计划管理\运输年计划录入.resx">
+      <DependentUpon>运输年计划录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输计划综合管理\运输计划详细信息.resx">
+      <DependentUpon>运输计划详细信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运输月计划管理\运输月计划录入.resx">
+      <DependentUpon>运输月计划录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="资源\校徽.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
