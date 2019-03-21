@@ -7,5 +7,5 @@ Platform: Visual Studio 2010
 
 
 Notes：
-+ A SQL database should be create, which maintains user accounts and freight orders. Connection info is in 辅助类/SQLquery.cs
-+ When running run the program, files in the GUI directory should be added to the folder containing exe
++ A SQL database should be created, which maintains user accounts and freight orders. Connection info is in 辅助类/SQLquery.cs
++ When running run the program, files in the GUI directory should be added to the folder containing .exe
